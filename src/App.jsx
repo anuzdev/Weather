@@ -1,8 +1,16 @@
 import React from "react";
-import "./App.css";
+import { Card } from "./Card";
+import { Search } from "./Search";
 
 const App = () => {
-  return <div className="bg-blue-300 text-amber-600">Weather App</div>;
+  return (
+    <>
+      <div className="grid m-10 justify-center">
+        <Search />
+        <Card />
+      </div>
+    </>
+  );
 };
 
 export default App;
